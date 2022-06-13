@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#F4F4F4">
 
     <ImageView
         android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="310dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/img_waitbus"
+        android:layout_marginTop="@dimen/_42sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,18 +28,24 @@
         app:layout_constraintTop_toBottomOf="@+id/view">
 
         <TextView
-            android:id="@+id/tv_tujuan"
             android:paddingTop="@dimen/_12sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mregular"
             android:text="Tujuan"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:textColor="#808080" />
 
-        <Spinner
-            android:id="@+id/combobox_tujuan"
+        <TextView
+            android:paddingTop="@dimen/_2sdp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mregular"
+            android:text="Samarinda"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:textColor="#808080" />
+
 
         <TextView
             android:id="@+id/tv_asal"
@@ -47,12 +54,18 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/mregular"
             android:text="Asal"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:textColor="#808080" />
 
-        <Spinner
-            android:id="@+id/combobox_asal"
+        <TextView
+            android:paddingTop="@dimen/_2sdp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mregular"
+            android:text="Balikpapan"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:textColor="#808080" />
 
         <LinearLayout
             android:paddingTop="@dimen/_12sdp"
@@ -60,6 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_8sdp"
             android:weightSum="2">
 
             <LinearLayout
