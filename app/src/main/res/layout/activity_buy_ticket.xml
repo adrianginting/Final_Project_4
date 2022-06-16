@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context=".BuyTicketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/card_main_menu"
+        android:layout_marginHorizontal="@dimen/_8sdp"  >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total payment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:textColor="#693BB8"
+                android:text="Rp166.000,00" />
+            <View
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="4dp"
+                android:background="#F4F4F4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="please select one of the payment method below"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Payment Method" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/card_main_menu"
+        android:layout_marginHorizontal="@dimen/_8sdp"  >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="@dimen/_225sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Bank transfer"/>
+
+                <TextView
+                    android:id="@+id/btn_pilih_pembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#693BB8"
+                    android:text="SELECT" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="4dp"
+                android:background="#F4F4F4"/>
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_bni" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

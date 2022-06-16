@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4">
         <activity
+            android:name=".SignUpSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InputPhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyTicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchTicketActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
